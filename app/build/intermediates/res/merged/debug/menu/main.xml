@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.demo.MainActivity" >
+
+	<!--     
+		showAsAction属性用来定义每个Action是如何显示的，
+		always表示永远显示在ActionBar中，如果屏幕空间不够则无法显示，
+		ifRoom表示屏幕空间够的情况下显示在ActionBar中，不够的话就显示在overflow中，
+		never则表示永远显示在overflow中。 
+	-->
+    
+    <item
+        android:id="@+id/action_serche"
+        android:orderInCategory="100"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/actionbar_search_icon"
+        android:title="@string/action_settings"/>
+    
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="100"
+        android:actionProviderClass="com.example.demo.PlusActionProvider"
+        android:icon="@drawable/actionbar_add_icon"
+        android:title="@string/action_settings"/>
+
+    
+    
+     <!--  -->
+     <item
+        android:id="@+id/action_album"
+        android:icon="@drawable/ofm_photo_icon"
+        android:title="@string/action_album"/>
+    <item
+        android:id="@+id/action_collection"
+        android:icon="@drawable/ofm_collect_icon"
+        android:title="@string/action_collection"/>
+    <item
+        android:id="@+id/action_card"
+        android:icon="@drawable/ofm_card_icon"
+        android:title="@string/action_card"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ofm_setting_icon"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/action_feed"
+        android:icon="@drawable/ofm_feedback_icon"
+        android:title="@string/action_feed"/>
+</menu>
